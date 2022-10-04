@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&family=Righteous&display=swap");
+
+/* font-family: 'Reem Kufi Fun', sans-serif;
+font-family: 'Righteous', cursive; */
+:root {
+  --bg: #061826;
+  --blue: #0471a6;
+  --secondary-blue: #3685b5;
+  --light-blue: #89aae6;
+  --rose: #ac80a0;
+  --white:white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(./bg-planetas.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white);
+}
+.calculadora{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--blue);
+    width: 800px;
+    border-radius: 15px;
+    padding: 30px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    box-shadow: 10px 10px 5px black;
+
+}
+.calculadora h1{
+    font-family:'Righteous', cursive;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 300;
+}
+.box-text{
+    height: 30px;
+    width: min-content;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.btn{
+    width: 20%;
+    align-self: center;
+    height: 30px;
+    border-radius: 25px;
+    background-color: var(--light-blue);
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: var(--rose);
+    cursor: pointer;
+}
+
+/* ----- Inicio Cards ----- */
+
+.container__cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    gap: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg);
+    border-radius: 15px;
+    padding: 10px;
+    gap: 15px;
+}
+
+.card img{
+    
+    height: 150px;
+    
+}
+.card h2{
+    font-size: 24px;
+}
+.card--resultado{
+    color: var(--rose);
+    font-size: 24px;
+}
+
+/* ----- Fin Cards ----- */

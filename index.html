@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculadora de peso</title>
+  </head>
+  <body>
+    <div class="calculadora">
+      <h1>Bienvenid@ a la calculadora de peso</h1>
+      <h3>¿Que puedes calcular?</h3>
+      <p>
+        Aqui podras saber cuanto pesarias en la Luna y los diferentes planetas
+        de nuestro sistema solar
+      </p>
+      <h2>Ingresa tu peso en el planeta Tierra</h2>
+      <input
+        class="box-text"
+        type="text"
+        name=""
+        id="box-text"
+        placeholder="ingresa tu peso"
+      />
+      <button class="btn" type="submit" onclick="getValueInput()">
+        Enviar
+      </button>
+      <div class="container__cards">
+        <div class="card">
+          <h2>Luna</h2>
+          <img src="./assets/luna.png" alt="">
+          <p>Tu peso seria de:</p>
+          <p class="card--resultado" id="text-luna"></p>
+        </div>
+        <div class="card">
+          <h2>Mercurio</h2>
+          <img src="./assets/mercurio.jfif" alt="">
+          <p>Tu peso seria de:</p>
+          <p class="card--resultado" id="text-mercurio"></p>
+        </div>
+        <div class="card">
+          <h2>Venus</h2>
+          <img src="./assets/Venus.jpg" alt="">
+          <p>Tu peso seria de:</p>
+          <p class="card--resultado" id="text-venus"></p></div>
+        <div class="card">
+          <h2>Marte</h2>
+          <img src="./assets/marte.jpg" alt="">
+          <p>Tu peso seria de:</p>
+          <p class="card--resultado" id="text-marte"></p>
+        </div>
+        <div class="card">
+          <h2>Jupiter</h2>
+          <img src="./assets/Jupiter.jpg" alt="">
+          <p>Tu peso seria de:</p>
+          <p class="card--resultado" id="text-jupiter"></p>
+        </div>
+        <div class="card">
+          <h2>Saturno</h2>
+          <img src="./assets/saturno.jpg" alt="">
+          <p>Tu peso seria de:</p>
+          <p class="card--resultado" id="text-saturno"></p>
+        </div>
+        <div class="card">
+          <h2>Urano</h2>
+          <img src="./assets/urano.jpg" alt="">
+          <p>Tu peso seria de:</p>
+          <p class="card--resultado" id="text-urano"></p>
+        </div>
+        <div class="card">
+          <h2>Neptuno</h2>
+          <img src="./assets/neptuno.jpg" alt="">
+          <p>Tu peso seria de:</p>
+          <p class="card--resultado" id="text-neptuno"></p>
+        </div>
+        <div class="card">
+          <h2>Pluton</h2>
+          <img src="./assets/pluton.jpg" alt="">
+          <p>Tu peso seria de:</p>
+          <p class="card--resultado" id="text-pluton"></p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
